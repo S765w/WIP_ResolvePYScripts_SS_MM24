@@ -1,0 +1,27 @@
+{
+    "recommendations": [
+        "njpwerner.autodocstring",
+        "vscjava.vscode-java-debug",
+        "batisteo.vscode-django",
+        "adobe.extendscript-debug",
+        "vscjava.vscode-java-pack",
+        "github.copilot",
+        "github.copilot-chat",
+        "visualstudioexptteam.vscodeintellicode",
+        "visualstudioexptteam.intellicode-api-usage-examples",
+        "wholroyd.jinja",
+        "redhat.java",
+        "ms-vscode.live-server",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-dependency",
+        "ms-python.vscode-pylance",
+        "ms-python.pylint",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "donjayamanne.python-environment-manager",
+        "donjayamanne.python-extension-pack",
+        "kevinrose.vsc-python-indent",
+        "vscjava.vscode-java-test",
+        "wayou.vscode-todo-highlight"
+    ]
+}

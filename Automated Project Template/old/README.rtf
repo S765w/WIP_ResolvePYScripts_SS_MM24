@@ -1,0 +1,98 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Bold;\f1\fnil\fcharset0 HelveticaNeue;\f2\fswiss\fcharset0 ArialMT;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 DaVinci Resolve Custom Template Script\
+
+\f1\b0\fs22 This Python script automates the process of setting up a new project in DaVinci Resolve. It allows\
+users to create a new project based on a selected template, import media files and organise them\
+into specific folders. Below you will find a detailed summary of the functions and use of the script.\
+
+\f0\b\fs24 Prerequisites\
+
+\f1\b0\fs22 - DaVinci Resolve must be open before you run this script.\
+- Make sure that the folder structures for the media files are set up as required.\
+
+\f0\b\fs24 Features\
+
+\f1\b0\fs22 1.Template selection: The script allows the user to select a project template from predefined\
+options or specify a custom template path.\
+2.Project creation: The user can name the new project and the script creates a copy of the\
+selected template with the new project name.\
+3.Import project: The new project file is moved to a specific location and imported into DaVinci\
+Resolve.\
+4.Import media: The script helps to import media files from user-defined locations into the\
+project's media pool.\
+5.Folder management: Media files can be moved to specific folders within the media pool to\
+ensure a clear project structure.\
+
+\f0\b\fs24 Script workflow\
+
+\f1\b0\fs22 1. DaVinci Resolve initialisation:\
+- The script checks whether DaVinci Resolve is open and initialises the API connection.\
+- Calls up the DaVinci Resolve project manager.\
+2.Template selection:\
+- Prompts the user to select a template from the predefined options or enter a custom path.\
+3. Create project:\
+- Prompts for the new project name.\
+- Copies the selected template to create a new project file with the specified name.\
+- Moves the new project file to a specific directory and imports it into DaVinci Resolve.\
+4. Load project:\
+- Loads the newly created project.\
+- Retrieves the Media Pool and Media Storage objects for further operations.\
+5. Media import:\
+- Recursively finds the "Source Media" folder in the master bin.\
+- Prompts the user to specify the location of the media clips and imports them into the Media\
+Pool.\
+- Moves the imported clips to the "Source Media" folder.\
+6. Additional folder imports:\
+- Provides options to import files into additional folders such as SFX, graphics, logo, sound, refs,\
+subtitles, stills, VFX, proxy and timelines.\
+- Users can either use the default paths or specify custom paths for each folder.\
+
+\f0\b\fs24 Instructions for use
+\f1\b0\fs22 1. Make sure that DaVinci Resolve is open:\
+- Start DaVinci Resolve before executing the script.\
+2. Execute the script:\
+- Run the script in a Python environment.\
+3. Follow the prompts:\
+- Select a project template.\
+- Enter a project name.\
+- Confirm or enter paths for importing media files and organising folders.\
+4. Complete the setup:\
+- Import media into the media pool and organise them in the designated folders.\
+5. Finish:\
+- Follow the instructions to import files into additional folders as needed.\
+- Finish the setup by pressing 'F' when you are done.\
+
+\f0\b\fs24 Example folder paths\
+
+\f1\b0\fs22 The script uses the following default paths for additional folders (they can be customised during\
+execution):\
+- SFX: `/Users/sasmi18/Dropbox/Projects/IKEA IMC/2024/Projects/Campaign 0001/SFX`\
+- Graphics: `/Users/sasmi18/Dropbox/Projects/IKEA IMC/2024/Projects/Campaign 0001/\
+Graphics`\
+- Logo: `/Users/sasmi18/Dropbox/Projects/IKEA IMC/2024/Projects/Campaign 0001/Logo`\
+- Sound: `/Users/sasmi18/Dropbox/Projects/IKEA IMC/2024/Projects/Campaign 0001/Sound`\
+- Refs: `/Users/sasmi18/Dropbox/Projects/IKEA IMC/2024/Projects/Campaign 0001/Refs`\
+- Subtitles: `/Users/sasmi18/Dropbox/Projects/IKEA IMC/2024/Projects/Campaign 0001/Subtitles`\
+- Stills: `/Users/sasmi18/Dropbox/Projects/IKEA IMC/2024/Projects/Campaign 0001/Stills`\
+- VFX: `/Users/sasmi18/Dropbox/Projects/IKEA IMC/2024/Projects/Campaign 0001/VFX`\
+- Proxy: `/Users/sasmi18/Dropbox/Projects/IKEA IMC/2024/Projects/Campaign 0001/Source\
+Media/Proxy`\
+- Timelines: `/Users/sasmi18/Dropbox/Projects/IKEA IMC/2024/Projects/Campaign 0001/\
+Timelines`\
+
+\f0\b\fs24 Conclusion\
+
+\f1\b0\fs22 This script provides an efficient way to set up and manage DaVinci Resolve projects and ensures\
+that media files are properly organised and easily accessible. By automating repetitive tasks, it\
+saves time and reduces the risk of errors when setting up projects.
+\f2\fs24 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+}

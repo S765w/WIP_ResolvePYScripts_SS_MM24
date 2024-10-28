@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/Users/samuel/.pyenv/versions/my_project_env/bin/python",
+    "terminal.integrated.env.osx": {
+        "PYENV_VERSION": "my_project_env"
+    }
+}
